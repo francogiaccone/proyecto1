@@ -1,0 +1,577 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    color: black;
+}
+
+li a:hover {
+    color: white;
+}
+
+.contenedor-principal {
+	display: grid;
+	grid-template-areas:
+	"header"
+	"main"
+	"footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 1000px 100px;
+	width: 100%;
+    height: 100%;
+} 
+
+/* ---------- HEADER ---------- */
+
+.header{
+	grid-area: header;
+    display: flex;
+    grid-template-areas: 
+    "header__logo nav";
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    background-color: #0077ff;
+}
+
+.header__logo {
+    width: 200px;
+    margin: 20px;
+}
+
+.nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 60px;
+}
+
+.nav ul li {
+    padding-inline-end: 80px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- HEADER ---------- */
+
+
+
+/* ---------- MAIN INDEX ---------- */
+
+.main{
+	grid-area: main;
+    display: grid;
+	grid-template-areas:
+	"card"
+	"update";
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 600px;
+	width: 100%;
+    height: 100%;
+}
+
+.card {
+    grid-area: card;
+    background-image: url(../assets/img/foto-principal.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__titulo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 60px;
+    text-shadow: 2px 2px black;
+}
+
+.card__texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: rgb(185, 198, 255);
+    text-shadow: 2px 1px black;
+}
+
+.card__texto:hover {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    text-shadow: 0px 0px white;
+}
+
+.update {
+    grid-area: update;
+    border-top: 5px solid white;
+    background-image: url(../assets/img/estadio.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.update__logo {
+    width: 600px;
+    border: 2px solid white;
+    border-radius:  3px;
+}
+
+.update__titulo {
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(138, 255, 249);
+}
+
+.update__texto {
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- MAIN INDEX ---------- */
+
+
+
+
+
+
+
+/* ---------- FOOTER ---------- */
+
+
+.footer {
+	grid-area: footer;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid black;
+}
+
+.footer__logo {
+    width: 54px;
+}
+
+.footer__encabezado {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+/* ---------- FOOTER ---------- */
+
+
+
+
+
+
+
+
+
+.contenedor-principal2 {
+	display: grid;
+	grid-template-areas:
+	"header"
+	"main"
+	"footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 1650px 100px;
+	width: 100%;
+    height: 100%;
+}
+
+.main2 {
+    grid-area: main;
+    display: grid;
+	grid-template-areas:
+	"card__nosotros"
+	"card__historia"
+    "card__principal"
+    "card__mapa";
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 400px 400px 450px;
+	width: 100%;
+    height: 100%;
+}
+
+
+.card__nosotros {
+    grid-area: card__nosotros;
+    background-image: url(../assets/img/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.card__historia {
+    grid-area: card__historia;
+    background-image: url(../assets/img/historia.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 30px;
+}
+
+.card__principal {
+    grid-area: card__principal;
+    background-image: url(../assets/img/sede.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.card__mapa {
+    grid-area: card__mapa;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h3 {
+    font-size: 30px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px black;
+}
+
+.compania__texto {
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenedor-principal3 {
+	display: grid;
+	grid-template-areas:
+	"header"
+	"main"
+	"footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 800px 100px;
+	width: 100%;
+    height: 100%;
+
+}
+
+
+.main3 {
+    grid-area: main;
+    display: grid;
+	grid-template-areas:
+	"pc pc"
+    "mobile mobile";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px;
+	width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/estadio.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.pc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.logos__pc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos__mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos__mobile img {
+    width: 200px;
+}
+
+.logos__pc img {
+    width: 200px;
+}
+
+h4 {
+    color: white;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+.contenedor-principal4 {
+	display: grid;
+	grid-template-areas:
+	"header"
+	"main"
+	"footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 650px 100px;
+	width: 100%;
+    height: 100%;
+} 
+
+
+.main4 {
+    grid-area: main;
+    background-image: url(../assets/img/estadio.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    padding-left: 20px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+.main4 h3 {
+    padding-left: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.contenedor-principal {
+	display: grid;
+	grid-template-areas:
+	"header"
+	"main"
+	"footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 360px 1400px 100px;
+	width: 100%;
+    height: 100%;
+} 
+
+.main {
+	grid-area: main;
+    display: grid;
+	grid-template-areas:
+	"card"
+	"update";
+    grid-template-columns: 100%;
+    grid-template-rows: 600px 800px;
+	width: 100%;
+    height: 100%;
+}
+
+.update__logo {
+    width: 300px;
+    border: 2px solid white;
+    border-radius:  3px;
+}
+
+.header{
+	grid-area: header;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo {
+    width: 160px;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+
+
+
+
+
+
+.contenedor-principal2 {
+	display: grid;
+	grid-template-areas:
+	"header"
+	"main"
+	"footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 360px 1400px 100px;
+	width: 100%;
+    height: 100%;
+} 
+
+.header{
+	grid-area: header;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo {
+    width: 130px;
+}
+
+.main2 {
+    grid-area: main;
+    display: grid;
+	grid-template-areas:
+	"card__nosotros"
+	"card__historia"
+    "card__principal"
+    "card__mapa";
+    grid-template-columns: 100%;
+    grid-template-rows: 320px 320px 320px 320px;
+	width: 100%;
+    height: 100%;
+}
+
+
+.contenedor-principal3 {
+	display: grid;
+	grid-template-areas:
+	"header"
+	"main"
+	"footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 360px 1100px 100px;
+	width: 100%;
+    height: 100%;
+
+}
+
+.main3 {
+    grid-area: main;
+    display: grid;
+	grid-template-areas:
+	"pc"
+    "mobile";
+    grid-template-columns: 1fr;
+    grid-template-rows: 600px 600px;
+	width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/estadio.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.mobile {
+    margin-bottom: 60px;
+}
+
+.contenedor-principal4 {
+	display: grid;
+	grid-template-areas:
+	"header"
+	"main"
+	"footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 360px 800px 100px;
+	width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
